@@ -1,5 +1,3 @@
-'use server';
-
 import { formatBriefingText, isValidEmail, type BriefingData } from '@/lib/briefing';
 
 const PRIMARY_EMAIL = 'dudu26315@gmail.com';
@@ -54,10 +52,7 @@ export async function sendBriefing(data: BriefingData): Promise<SendResult> {
       | { success?: string | boolean }
       | null;
 
-    if (json && json.success === 'true') {
-      return { ok: true };
-    }
-    if (json && json.success === true) {
+    if (json && (json.success === 'true' || json.success === true)) {
       return { ok: true };
     }
 

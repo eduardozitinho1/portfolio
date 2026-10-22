@@ -2,7 +2,7 @@
 
 import { useMemo, useState } from 'react';
 import Link from 'next/link';
-import { sendBriefing } from './actions';
+import { sendBriefing } from '@/lib/submit-briefing';
 import {
   AUDIENCE_PRICES,
   EMPTY_BRIEFING,
