@@ -34,15 +34,18 @@ export const metadata: Metadata = {
   },
   description: site.description,
   authors: [{ name: site.name }],
+  verification: {
+    google: 'jYmEOsQ-5Ljg4CXnRZEizY3xvPRO3k4I2RDntIX8-xU',
+  },
   openGraph: {
-    type: "website",
+    type: 'website',
     title: `${site.name} — Portfólio`,
     description: site.description,
     siteName: site.name,
-    locale: "pt_BR",
+    locale: 'pt_BR',
   },
   twitter: {
-    card: "summary_large_image",
+    card: 'summary_large_image',
     title: `${site.name} — Portfólio`,
     description: site.description,
   },
